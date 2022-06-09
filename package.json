@@ -1,0 +1,64 @@
+{
+  "name": "slide-calendar-khan",
+  "version": "0.1.0",
+  "description": "calendar with slide 📆",
+  "main": "dist/index.js",
+  "private": false,
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Han-Seung-Chan/khan-slide-calendar.git"
+  },
+  "author": "Khan <seungchanhan00@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Han-Seung-Chan/khan-slide-calendar/issues"
+  },
+  "homepage": "https://github.com/Han-Seung-Chan/khan-slide-calendar#readme",
+  "dependencies": {
+    "@chakra-ui/react": "^2.2.1",
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.3.0",
+    "@testing-library/user-event": "^13.5.0",
+    "styled-components": "^5.3.5",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^2.1.4"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "clean": "rimraf dist",
+    "compile": "npm run clean && cross-env NODE_ENV=production babel lib --out-dir dist --copy-files"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.17.10",
+    "@babel/preset-env": "^7.18.2",
+    "@babel/preset-react": "^7.17.12",
+    "cross-env": "^7.0.3"
+  }
+}
